@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ShowWebView">
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/topbg">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:src="@mipmap/leftarrow"/>
+        <TextView
+            android:id="@+id/tv_CurrentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="预订下单"
+            android:textSize="@dimen/name3"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/serview_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+
+
+</LinearLayout>

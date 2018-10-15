@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="name0">10sp</dimen>
+    <dimen name="name1">12sp</dimen>
+    <dimen name="name2">14sp</dimen>
+    <dimen name="name3">16sp</dimen>
+    <dimen name="name4">18sp</dimen>
+    <dimen name="name5">20sp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="margin12">12dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="margin5">5dp</dimen>
+
+    <dimen name="sp1">10sp</dimen>
+    <dimen name="sp2">13sp</dimen>
+    <dimen name="sp3">22sp</dimen>
+    <dimen name="sp4">45sp</dimen>
+
+    <!-- 个人资料中的间距 -->
+    <dimen name="tv_person_margin">20dp</dimen>
+    <!-- 个人资料字体 -->
+    <dimen name="tv_person_sp">17dp</dimen>
+
+    <dimen name="tv_month_width">100dp</dimen>
+</resources>

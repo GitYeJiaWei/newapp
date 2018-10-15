@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/gray">
+    <!--TOP-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/topbg">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:src="@mipmap/leftarrow"/>
+        <TextView
+            android:id="@+id/tv_CurrentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="预定成功"
+            android:textSize="@dimen/name3"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <!--BODY-->
+    <TextView
+        android:id="@+id/tv_CurrentT"
+        android:layout_width="match_parent"
+        android:background="#f9ee1c"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="剩余免费取消时间  10：50"
+        android:textSize="@dimen/name2"
+        android:textColor="@color/red"/>
+    <!---->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin10"
+        android:layout_margin="@dimen/margin10"
+        android:background="@drawable/listviewbg_fill">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_toLeftOf="@+id/order_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/success48" />
+            <TextView
+                android:layout_marginLeft="@dimen/margin10"
+                android:id="@+id/order_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/name3"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="预定成功"/>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_centerVertical="true"
+                android:text="下单时间："
+                android:textColor="@color/txt_color_gray"
+                android:textSize="@dimen/name2"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-02-01 12:12"
+                android:textColor="@color/txt_color_subgray"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/name2"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/margin10"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:text="预约入场："
+                android:layout_centerVertical="true"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="@dimen/name2"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-02-01 12:12"
+                android:textColor="@color/txt_color_subgray"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/name2"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/margin10"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:text="预计出场："
+                android:layout_centerVertical="true"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="@dimen/name2"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-02-01 12:12"
+                android:textColor="@color/txt_color_subgray"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/name2"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/margin10"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--UNDER-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/name2"
+            android:text="温馨提示："/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/name2"
+            android:text="为了避免影响他人停车，请在规定时间内提前离场"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/name2"
+            android:textColor="@color/red"
+            android:text="注：10.30后订单将自动计费！"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/get_order"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:text="查看订单"
+                android:textSize="@dimen/name2"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:background="@drawable/buttongraybg"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/navigation"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:text="导航"
+                android:textSize="@dimen/name2"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:background="@drawable/buttonokbg"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

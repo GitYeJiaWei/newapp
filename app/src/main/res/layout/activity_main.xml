@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true" >
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        ></FrameLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd" />
+    <LinearLayout
+        android:id="@+id/ll_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:baselineAligned="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/iv_home"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/mypark00001"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_home"
+                android:layout_centerHorizontal="true"
+                android:text="停车"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_query"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/iv_query"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/service00"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_query"
+                android:layout_centerHorizontal="true"
+                android:text="服务"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_client"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/iv_client"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/mx00_"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_client"
+                android:layout_centerHorizontal="true"
+                android:text="对账"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/iv_me"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/my00_"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_me"
+                android:layout_centerHorizontal="true"
+                android:text="我的"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

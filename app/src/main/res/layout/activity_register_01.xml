@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#f7f7f7"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin10"
+        android:background="@color/white"
+        android:layout_height="45dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EDEDED"></View>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/name2"
+            android:background="@null"
+            android:paddingLeft="@dimen/margin10"
+            android:textColor="@color/txt_color_gray"
+            android:hint="请输入手机号"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#EDEDED"></View>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin10"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radiobutton_bg"
+            android:checked="true"/>
+        <TextView
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已审慎阅读并同意"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="《用户协议》"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSelected"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/margin10"
+        android:text="同意并注册"
+        android:textSize="@dimen/name2"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:background="@drawable/buttonokbg"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--listview item-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/mx_time"
+            android:layout_width="0dip"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="20180307 234223"
+            android:gravity="center"
+            android:textSize="@dimen/name1" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#EDEDED"></View>
+        <TextView
+            android:id="@+id/mx_je"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="23.9"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:textSize="@dimen/name2" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#EDEDED"></View>
+        <TextView
+            android:id="@+id/mx_sjh"
+            android:layout_width="0dip"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="18559661991"
+            android:gravity="center"
+            android:textSize="@dimen/name1" />
+    </LinearLayout>
+    <!---->
+</LinearLayout>

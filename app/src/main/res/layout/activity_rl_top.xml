@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context="zhgxtc.com.zft_zhgxtc.Rl_topActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/topbg">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:src="@mipmap/leftarrow"/>
+        <TextView
+            android:id="@+id/tv_CurrentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的名片"
+            android:textSize="@dimen/name3"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+    <!---->
+    <LinearLayout
+        android:id="@+id/llsecond"
+        android:layout_below="@+id/rlTop"
+        android:paddingTop="@dimen/margin5"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 扫一扫 -->
+        <RelativeLayout
+            android:id="@+id/rl_myPark"
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/margin5"
+            android:paddingBottom="@dimen/margin5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/rl_user1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:textSize="@dimen/name2"
+                android:text="用户名："
+                android:layout_centerVertical="true"
+                android:textColor="@color/txt_color_gray"/>
+
+            <EditText
+                android:id="@+id/rl_user"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="@dimen/name2"
+                tools:text="zhangjinshan"
+                android:layout_toRightOf="@+id/rl_user1"
+                android:layout_centerVertical="true"
+                android:enabled="false"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/margin10"
+                android:textColor="@color/txt_color_subgray"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/margin5"
+            android:paddingBottom="@dimen/margin5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/rl_xing1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:textSize="@dimen/name2"
+                android:text="姓："
+                android:layout_centerVertical="true"
+                android:textColor="@color/txt_color_gray"/>
+
+            <EditText
+                android:id="@+id/rl_xing"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="@dimen/name2"
+                tools:text="张"
+                android:layout_toRightOf="@+id/rl_xing1"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/margin10"
+                android:textColor="@color/txt_color_subgray"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/gray" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/margin5"
+            android:paddingBottom="@dimen/margin5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/rl_ming1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:textSize="@dimen/name2"
+                android:text="名："
+                android:layout_centerVertical="true"
+                android:textColor="@color/txt_color_gray"/>
+
+            <EditText
+                android:id="@+id/rl_ming"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="@dimen/name2"
+                android:layout_toRightOf="@+id/rl_ming1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                tools:text="金山"
+                android:textColor="@color/txt_color_subgray"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/gray" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/margin5"
+            android:paddingBottom="@dimen/margin5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/rl_phone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:textSize="@dimen/name2"
+                android:text="手机号："
+                android:layout_centerVertical="true"
+                android:textColor="@color/txt_color_gray"/>
+
+            <EditText
+                android:id="@+id/rl_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="@dimen/name2"
+                android:layout_toRightOf="@+id/rl_phone1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                tools:text="17759053913"
+                android:textColor="@color/txt_color_subgray"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/margin5"
+            android:paddingBottom="@dimen/margin5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/rl_chepaihao1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:textSize="@dimen/name2"
+                android:text="车牌号："
+                android:layout_centerVertical="true"
+                android:textColor="@color/txt_color_gray"/>
+
+            <EditText
+                android:id="@+id/rl_chepaihao"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="@dimen/name2"
+                android:layout_toRightOf="@+id/rl_chepaihao1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:hint="多辆车牌用，号隔开"
+                android:textColor="@color/txt_color_subgray"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/gray" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/margin5"
+            android:paddingBottom="@dimen/margin5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/rl_email1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:textSize="@dimen/name2"
+                android:text="邮箱："
+                android:layout_centerVertical="true"
+                android:textColor="@color/txt_color_gray"/>
+
+            <EditText
+                android:id="@+id/rl_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="@dimen/name2"
+                android:layout_toRightOf="@+id/rl_email1"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/margin10"
+                tools:text="854578447@qq.com"
+                android:textColor="@color/txt_color_subgray"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/gray" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/margin5"
+            android:paddingBottom="@dimen/margin5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/rl_danwei1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:textSize="@dimen/name2"
+                android:text="单位名称："
+                android:layout_centerVertical="true"
+                android:textColor="@color/txt_color_gray"/>
+
+            <EditText
+                android:id="@+id/rl_danwei"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="@dimen/name2"
+                android:layout_toRightOf="@+id/rl_danwei1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                tools:text="博思软件"
+                android:textColor="@color/txt_color_subgray"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/gray" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/margin5"
+            android:paddingBottom="@dimen/margin5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/rl_address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:textSize="@dimen/name2"
+                android:text="单位地址："
+                android:layout_centerVertical="true"
+                android:textColor="@color/txt_color_gray"/>
+
+            <EditText
+                android:id="@+id/rl_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="@dimen/name2"
+                android:layout_toRightOf="@+id/rl_address1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                tools:text="高新大道5号博思软件17层"
+                android:textColor="@color/txt_color_subgray"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/gray" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/margin5"
+            android:paddingBottom="@dimen/margin5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/rl_peraddress1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:textSize="@dimen/name2"
+                android:text="个人地址："
+                android:layout_centerVertical="true"
+                android:textColor="@color/txt_color_gray"/>
+
+            <EditText
+                android:id="@+id/rl_peraddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="@dimen/name2"
+                android:layout_toRightOf="@+id/rl_peraddress1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                tools:text="高新大道5号博思软件17层"
+                android:textColor="@color/txt_color_subgray"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="保存"
+        android:textSize="@dimen/name2"
+        android:layout_margin="@dimen/margin10"
+        android:textColor="@color/white"
+        android:background="@drawable/buttonokbg"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

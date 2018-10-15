@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#f7f7f7"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dip"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:text="消费时间"
+                android:gravity="center"
+                android:textSize="@dimen/name2" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#EDEDED"></View>
+            <TextView
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="金额"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:textSize="@dimen/name2" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#EDEDED"></View>
+            <TextView
+                android:layout_width="0dip"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:text="对方账号"
+                android:gravity="center"
+                android:textSize="@dimen/name2" />
+     </LinearLayout>
+    <ListView
+        android:id="@+id/mx_system_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0dp"
+        android:divider="@null"></ListView>
+</LinearLayout>
